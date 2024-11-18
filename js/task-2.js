@@ -222,7 +222,7 @@
 // printInfo('Jacob,William,Solomon,Artemis', '89001234567,89001112233,890055566377,890055566300');
 
 function makeArray(firstArray, secondArray, maxLength) {
-  const fullarray = (firstArray.join('-') + '-' + secondArray.join('-')).split('-');
+  const fullarray = firstArray.concat(secondArray);
   if (fullarray.length > maxLength) {
     return fullarray.slice(0, maxLength);
   } else {
